@@ -1,19 +1,36 @@
+# 📘 Assignment: Hangman Game Challenge
 
-# 🎮 Hangman Game Challenge
+## 🎯 Objective
 
-Build the classic word-guessing game using Python strings, loops, and user input.
+In this assignment, you will build a text-based Hangman game in Python. You will practice working with strings, loops, conditionals, and user input to create a complete game experience.
 
-## � What You'll Build
+## 📝 Tasks
 
-Create a Hangman game where players guess letters to reveal a hidden word before running out of attempts.
+### 🛠️	Build Core Hangman Gameplay
 
-**Skills practiced:** String manipulation, loops, conditionals, random selection
+#### Description
+Create the main game loop for Hangman. The game should choose a random word, let the player guess one letter at a time, and display progress after each guess.
 
-## ✅ Must Have's
+#### Requirements
+Completed program should:
 
-Your game must:
-- Randomly select words from a predefined list
-- Accept letter guesses and show current progress (_ _ _ format)
-- Track incorrect guesses remaining
-- End when word is guessed or attempts exhausted
-- Display win/lose messages
+- Randomly select one word from a predefined list of words.
+- Ask the player to enter a single letter on each turn.
+- Display the current word progress using underscores for unknown letters (for example: `_ a _ _ m a n`).
+- Reveal all matching positions when the guessed letter appears in the word.
+- Keep accepting guesses until the word is fully revealed or attempts run out.
+
+
+### 🛠️	Track Attempts and End States
+
+#### Description
+Add game rules for incorrect guesses and finish the game with clear win or lose messages.
+
+#### Requirements
+Completed program should:
+
+- Start with a fixed number of incorrect attempts (for example, 6).
+- Decrease remaining attempts only when the guessed letter is not in the word.
+- Show the player how many incorrect attempts remain after each turn.
+- End the game with a win message when all letters are guessed.
+- End the game with a lose message when attempts reach zero and reveal the correct word.
